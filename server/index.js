@@ -1,5 +1,6 @@
+/** FEEDBACK: I love the use of comments to document your code here! Great job! */
 const express = require('express')  //getting express 
-const app = express()  //making a server apllication 
+const app = express()  //making a server application 
 const path = require('path')
 
 const pathToDist = path.join(__dirname, '../vite-project/dist')
@@ -15,7 +16,7 @@ const logRoutes = (req, res, next) => {
   next(); // Passes the request to the next middleware/controller
 };
 
-app.use(logRoutes)  // using .use is used for middlewear 
+app.use(logRoutes)  // using .use is used for middleware 
 app.use(serveStatic)
 
 const port = 1234 // making a port number 
